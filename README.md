@@ -1,2 +1,9 @@
-# Forest_Fire
-this dataset contain data related to the state of crops, meteorological conditions as well as the fire indicator “Thermal Anomalies”,
+# WildFires
+
+The Dataset we created based on Remote Sensing data to predict the occurrence of wildfires, it contains Data related to the state of crops (NDVI: Normalized Difference Vegetation Index), meteorological conditions (LST: Land Surface Temperature) as well as the fire indicator “Thermal Anomalies”. All three parameters were collected from MODIS (Moderate Resolution Imaging Spectroradiometer), an instrument carried on board the Terra platform. The collected data went through several preprocessing techniques before building the final Dataset. The experimental Dataset is considered as a case study to illustrate what can be done at larger scales.
+
+The Data contains parameters with high influence of wildfires occurrence collected using remote sensing. The Dataset is composed of four columns, the first three columns are NDVI, LST, and Thermal Anomalies and the fourth column represents the corresponding class (fire or no_fire), the Dataset contains 804 rows: 386 instances of the class “fire” and 418 instances of the class “no fire” with 418 rows. Each row contains the collected data and its class. 
+
+The data were downloaded from the official website of NASA's Land Processes Distributed Active Archive Center (LP DAAC), and then we preprocessed them using multiple preprocessing techniques to remove noises and correct inconsistencies, and finally extracting useful information. 
+
+The study area is composed of multiple zones located in the center of Canada. The surface of this area is approximately 2 million hectares. These zones differ in their size, burn period, date of burn and extent. We have chosen to apply the experiment in a big region of Canada's forests because it is known for its high rate of wildfires and also for the availability of fire information (start and end fire date, cause of fire and the surface of the burned area in hectares), these information were acquired from The Canadian Wild-land Fire Information System (CWFIS) which creates daily fire weather and fire behavior maps year-round and hot spot maps throughout the forest fire season 
